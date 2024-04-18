@@ -1,0 +1,57 @@
+<!-- <style>
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    .card {
+      flex: 0 0 auto;
+      width: 300px;
+      height: 200px;
+      margin-right: 20px;
+      background-color: #ddd;
+      border-radius: 8px;
+      scroll-snap-align: start;
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel p-4">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+    <div class="card">Card 5</div>
+  </div>
+</body>
+
+<script>
+          let isDown = false;
+          let startX;
+          let scrollLeft;
+
+          const carousel = document.querySelector('.carousel');
+
+          carousel.addEventListener('mousedown', (e) => {
+            isDown = true;
+            startX = e.pageX - carousel.offsetLeft;
+            scrollLeft = carousel.scrollLeft;
+          });
+
+          carousel.addEventListener('mouseleave', () => {
+            isDown = false;
+          });
+
+          carousel.addEventListener('mouseup', () => {
+            isDown = false;
+          });
+
+          carousel.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - carousel.offsetLeft;
+            const walk = (x - startX) * 3; // Adjust the scroll speed here
+            carousel.scrollLeft = scrollLeft - walk;
+          });
+        </script> -->

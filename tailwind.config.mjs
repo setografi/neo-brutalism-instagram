@@ -6,6 +6,7 @@ export default {
       colors: {
         backgroundColor: "#ECE6C2",
         textBlack: "#000000",
+        grayBgpost: "#DFDFE8",
         goldenRod: "#D0B229",
         roseQuartz: "#C58F9B",
         limeGreen: "#73C255",

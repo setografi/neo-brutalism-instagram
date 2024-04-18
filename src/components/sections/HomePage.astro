@@ -1,12 +1,40 @@
 ---
 import Container from "../shared/Container.astro";
 import Stories from "../shared/Stories.astro";
+import PostEvent from "../shared/PostEvents.astro"
+
+const storiesItems = [
+    {
+        src:"/images/stories-profile-(1).png",
+        text:"Your Story"
+    },
+    {
+        src:"/images/stories-profile-(2).png",
+        text:"Jack.James"
+    },
+    {
+        src:"/images/stories-profile-(3).png",
+        text:"Williams_"
+    },
+    {
+        src:"/images/stories-profile-(4).png",
+        text:"Alex.B"
+    },
+    {
+        src:"/images/stories-profile-(5).png",
+        text:"James"
+    },
+]
 ---
 
 <section class="relative pt-[85px]">
     <Container className={"flex flex-col"}>
-        <div>
-            <Stories />
+        <div class="my-3 flex space-x-2 overscroll-auto overflow-x-auto">
+            {storiesItems.map(item=>{
+                return <Stories {...item}/>
+            })
+            }
         </div>
+        <PostEvent />
     </Container>
 </section>

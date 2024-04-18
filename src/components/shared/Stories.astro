@@ -1,21 +1,25 @@
-  <!-- Stories -->
-  <section class="my-3 flex space-x-2 items-center overscroll-auto overflow-x-auto">
+---
+export interface Props{
+    src:string,
+    text:string,
+}
+const {src, text} = Astro.props
+---  
+  
+<!-- <section class="my-3 flex space-x-2 items-center overscroll-auto overflow-x-auto">
     <div class="flex flex-col justify-center items-center">
-      <div class="relative top-0">
-        <div class="relative top-0 left-0 w-16 h-16 flex justify-center items-center rounded-full bg-goldenRod border-2 border-textBlack overflow-hidden z-10">
-            <img src="/images/stories-profile-(1).png" alt="your story" class="h-full">
+        <div class="relative top-0">
+            <div class="relative top-0 left-0 w-16 h-16 flex justify-center items-center rounded-full bg-goldenRod border-2 border-textBlack overflow-hidden z-10">
+                <img src="/images/stories-profile-(1).png" alt="your story" class="h-full">
+            </div>
+            <div class="absolute top-11 left-12 rounded-full bg-white cursor-pointer">
+                <svg aria-label="Plus icon" class="x1lliihq x1n2onr6" color="rgb(0, 149, 246)" fill="rgb(0, 149, 246)" height="16" role="img" viewBox="0 0 24 24" width="16">
+                    <path d="M12.001.504a11.5 11.5 0 1 0 11.5 11.5 11.513 11.513 0 0 0-11.5-11.5Zm5 12.5h-4v4a1 1 0 0 1-2 0v-4h-4a1 1 0 1 1 0-2h4v-4a1 1 0 1 1 2 0v4h4a1 1 0 0 1 0 2Z"></path>
+                </svg>
+            </div>
+            <div class="absolute inset-0 top-0 left-0 bg-black w-16 h-16 -translate-x-[2px] translate-y-[2px] border-2 border-textBlack rounded-full"></div>
         </div>
-        <div class="absolute top-11 left-12 rounded-full bg-white cursor-pointer">
-          <svg aria-label="Plus icon" class="x1lliihq x1n2onr6" color="rgb(0, 149, 246)" fill="rgb(0, 149, 246)"
-            height="16" role="img" viewBox="0 0 24 24" width="16">
-            <path
-              d="M12.001.504a11.5 11.5 0 1 0 11.5 11.5 11.513 11.513 0 0 0-11.5-11.5Zm5 12.5h-4v4a1 1 0 0 1-2 0v-4h-4a1 1 0 1 1 0-2h4v-4a1 1 0 1 1 2 0v4h4a1 1 0 0 1 0 2Z">
-            </path>
-          </svg>
-        </div>
-        <div class="absolute inset-0 top-0 left-0 bg-black w-16 h-16 -translate-x-[2px] translate-y-[2px] border-2 border-textBlack rounded-full"></div>
-      </div>
-      <span class="text-[10px] text-textBlack mt-1 font-semibold font-inter">Your Story</span>
+        <span class="text-[10px] text-textBlack mt-1 font-semibold font-inter">Your Story</span>
     </div>
 
     <div class="relative top-0 left-0 flex flex-col justify-center items-center">
@@ -49,36 +53,12 @@
         <div class="absolute inset-0 top-0 left-0 bg-black w-16 h-16 -translate-x-[2px] translate-y-[2px] border-2 border-textBlack rounded-full"></div>
         <span class="text-[10px] text-textBlack mt-1 font-semibold font-inter">James</span>
     </div>
+  </section> -->
 
-    <div class="relative top-0 left-0 flex flex-col justify-center items-center">
-        <div class="w-16 h-16 flex justify-center items-center rounded-full bg-roseQuartz border-2 border-textBlack overflow-hidden z-10">
-            <img src="/images/stories-profile-(2).png" alt="Jack.James" class="h-full">
-        </div>
-        <div class="absolute inset-0 top-0 left-0 bg-black w-16 h-16 -translate-x-[2px] translate-y-[2px] border-2 border-textBlack rounded-full"></div>
-        <span class="text-[10px] text-textBlack mt-1 font-semibold font-inter">Jack.James</span>
+<div class="relative top-0 left-0 flex flex-col justify-center items-center">
+    <div class="w-16 h-16 flex justify-center items-center rounded-full bg-roseQuartz border-2 border-textBlack overflow-hidden z-10">
+        <img src={src} alt="Jack.James" class="h-full">
     </div>
-
-    <div class="relative top-0 left-0 flex flex-col justify-center items-center">
-        <div class="w-16 h-16 flex justify-center items-center rounded-full bg-limeGreen border-2 border-textBlack overflow-hidden z-10">
-            <img src="/images/stories-profile-(3).png" alt="Williams_" class="h-full">
-        </div>
-        <div class="absolute inset-0 top-0 left-0 bg-black w-16 h-16 -translate-x-[2px] translate-y-[2px] border-2 border-textBlack rounded-full"></div>
-        <span class="text-[10px] text-textBlack mt-1 font-semibold font-inter">Williams_</span>
-    </div>
-
-    <div class="relative top-0 left-0 flex flex-col justify-center items-center">
-        <div class="w-16 h-16 flex justify-center items-center rounded-full bg-ceruleanBlue border-2 border-textBlack overflow-hidden z-10">
-            <img src="/images/stories-profile-(4).png" alt="Alex.B" class="h-full">
-        </div>
-        <div class="absolute inset-0 top-0 left-0 bg-black w-16 h-16 -translate-x-[2px] translate-y-[2px] border-2 border-textBlack rounded-full"></div>
-        <span class="text-[10px] text-textBlack mt-1 font-semibold font-inter">Alex.B</span>
-    </div>
-
-    <div class="relative top-0 left-0 flex flex-col justify-center items-center">
-        <div class="w-16 h-16 flex justify-center items-center rounded-full bg-turQuoise border-2 border-textBlack overflow-hidden z-10">
-            <img src="/images/stories-profile-(5).png" alt="James" class="h-full">
-        </div>
-        <div class="absolute inset-0 top-0 left-0 bg-black w-16 h-16 -translate-x-[2px] translate-y-[2px] border-2 border-textBlack rounded-full"></div>
-        <span class="text-[10px] text-textBlack mt-1 font-semibold font-inter">James</span>
-    </div>    
-  </section>
+    <div class="absolute inset-0 top-0 left-0 bg-black w-16 h-16 -translate-x-[2px] translate-y-[2px] border-2 border-textBlack rounded-full"></div>
+    <span class="text-[10px] text-textBlack mt-1 font-semibold font-inter">{text}</span>
+</div>
