@@ -2,28 +2,49 @@
 import Container from "../shared/Container.astro";
 import Stories from "../shared/Stories.astro";
 import PostEvent from "../shared/PostEvents.astro"
+import PostEvents from "../shared/PostEvents.astro";
 
 const storiesItems = [
     {
-        src:"/images/stories-profile-(1).png",
+        imagestrorie:"/images/stories-profile-(1).png",
         text:"Your Story"
     },
     {
-        src:"/images/stories-profile-(2).png",
+        imagestrorie:"/images/stories-profile-(2).png",
         text:"Jack.James"
     },
     {
-        src:"/images/stories-profile-(3).png",
+        imagestrorie:"/images/stories-profile-(3).png",
         text:"Williams_"
     },
     {
-        src:"/images/stories-profile-(4).png",
+        imagestrorie:"/images/stories-profile-(4).png",
         text:"Alex.B"
     },
     {
-        src:"/images/stories-profile-(5).png",
+        imagestrorie:"/images/stories-profile-(5).png",
         text:"James"
     },
+]
+
+const postsItems = [
+    {
+        profileimage:"/images/stories-profile-(2).png",
+        mention:"Jack.James",
+        sponsered:"Sponsered",
+        postimage:"/images/post-(2).jpg",
+        posttext:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt... ",
+        comment:"View all 16 comments",
+    },
+
+    {
+        profileimage:"/images/stories-profile-(5).png",
+        mention:"Orias_Teguh",
+        sponsered:"Sponsered",
+        postimage:"/images/post-(1).jpg",
+        posttext:"mending not surprise wkwk... ",
+        comment:"View all 30 comments",
+    }
 ]
 ---
 
@@ -35,6 +56,14 @@ const storiesItems = [
             })
             }
         </div>
-        <PostEvent />
+
+        <div class="mb-14">
+            {postsItems.map(item=>{
+                return <PostEvents {...item}/>
+            })
+            }
+        </div>
+
+
     </Container>
 </section>

@@ -1,9 +1,9 @@
 ---
 export interface Props{
-    src:string,
+    imagestrorie:string,
     text:string,
 }
-const {src, text} = Astro.props
+const {imagestrorie, text} = Astro.props
 ---  
   
 <!-- <section class="my-3 flex space-x-2 items-center overscroll-auto overflow-x-auto">
@@ -56,8 +56,8 @@ const {src, text} = Astro.props
   </section> -->
 
 <div class="relative top-0 left-0 flex flex-col justify-center items-center">
-    <div class="w-16 h-16 flex justify-center items-center rounded-full bg-roseQuartz border-2 border-textBlack overflow-hidden z-10">
-        <img src={src} alt="Jack.James" class="h-full">
+    <div class="relative w-16 h-16 flex justify-center items-center rounded-full bg-grayBgpost border-2 border-textBlack overflow-hidden z-10">
+        <img src={imagestrorie} alt="Jack.James" class="h-full">
     </div>
     <div class="absolute inset-0 top-0 left-0 bg-black w-16 h-16 -translate-x-[2px] translate-y-[2px] border-2 border-textBlack rounded-full"></div>
     <span class="text-[10px] text-textBlack mt-1 font-semibold font-inter">{text}</span>

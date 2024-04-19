@@ -1,0 +1,13 @@
+---
+export interface Props{
+    profileimage:string,
+}
+const {profileimage} = Astro.props
+---
+
+<div class="relative top-0 left-0">
+    <div class="relative w-[21px] h-[21px] flex justify-center items-center rounded-full bg-grayBgpost border-[0.95px] border-textBlack overflow-hidden z-10">
+        <img src={profileimage} alt="Jack.James" class="h-full">
+    </div>
+    <div class="absolute inset-0 top-0 left-0 bg-black w-[21px] h-[21px] -translate-x-[1px] translate-y-[1px] border-[0.95px] border-textBlack rounded-full"></div>
+</div>
