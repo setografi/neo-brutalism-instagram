@@ -18,7 +18,7 @@ const {profileimage, mention, sponsered, postimage, posttext, comment} = Astro.p
         <div class="flex items-center space-x-2">
             <div class="relative top-0">
                 <div class="relative w-10 h-10 flex justify-center items-center rounded-full bg-grayBgpost border-[1.01px] border-textBlack overflow-hidden z-10">
-                    <img src={profileimage} alt="profile image" class="h-full">
+                    <img src={profileimage} alt="profile image" class="w-full">
                 </div>
                 
                 <div class="absolute inset-0 top-0 left-0 bg-black w-10 h-10 -translate-x-[2px] translate-y-[2px] border-[1.01px] border-textBlack rounded-full"></div>
@@ -37,7 +37,7 @@ const {profileimage, mention, sponsered, postimage, posttext, comment} = Astro.p
     
     <div class="relative top-0">
         <div class="relative bg-grayBgpost my-4 rounded-sm border-[3px] border-textBlack z-10">
-            <img src={postimage} width="335" height="309" alt="post" class="h-full">
+            <img src={postimage} width="335" height="309" alt="post" class="w-full h-[309] object-cover aspect-auto">
         </div>
 
         <div class="absolute inset-0 top-0 left-0 bg-textBlack rounded-sm translate-y-1"></div>
