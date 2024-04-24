@@ -4,70 +4,48 @@ import ProfileTop from "../navbars/ProfileTop.astro"
 ---
 
 <section class="relative pt-[85px]">
-  <div class="lg:w-8/12 lg:mx-auto mb-8">
+    <div class="px-5 mb-8">
+        <ProfileTop />
 
-    <ProfileTop />
+        <div class="flex flex-wrap items-center space-x-4 pt-6">
+            <div class="w-3/12">
+                <img class="w-20 h-20 md:w-40 md:h-40 object-cover rounded-full border-2 border-pink-600 p-1" src="/images/stories-profile-(1).png" alt="profile">
+            </div>
 
-    <div class="flex flex-wrap items-center p-4 md:py-8">
+            <div class="w-8/12">
+                <ul class="flex justify-around text-center p-2 gap-6">
+                    <li class="font-sfPro font-normal text-textBlack text-sm">
+                        <span class="font-sfPro font-bold">1,234</span>
+                        Posts
+                    </li>
 
-      <div class="md:w-3/12 md:ml-16">
-        <!-- profile image -->
-        <img class="w-20 h-20 md:w-40 md:h-40 object-cover rounded-full
-                     border-2 border-pink-600 p-1" src="/images/stories-profile-(1).png" alt="profile">
-      </div>
+                    <li class="font-sfPro font-normal text-textBlack text-sm">
+                        <span class="font-sfPro font-bold">5,678</span>
+                        Followers
+                    </li>
 
-      <!-- profile meta -->
-      <div class="w-8/12 md:w-7/12 ml-4">
-      <ul class="flex md:hidden justify-around space-x-8 border-t text-center p-2 text-gray-600 leading-snug text-sm">
-        <li>
-          <span class="font-semibold text-gray-800 block">6</span>
-          posts
-        </li>
+                    <li class="font-sfPro font-normal text-textBlack text-sm">
+                        <span class="font-sfPro font-bold">9,101</span>
+                        Following
+                    </li>
+                </ul>
+            </div>
+    </div>
 
-        <li>
-          <span class="font-semibold text-gray-800 block">50.5k</span>
-          followers
-        </li>
-        <li>
-          <span class="font-semibold text-gray-800 block">10</span>
-          following
-        </li>
-      </ul>
+    <div class="text-xs pt-3">
+        <h1 class="font-inter font-bold">Marina Jose</h1>
+        <span class="font-inter font-normal text-textGray text-[10px]">Blogger</span>
+        <p class="font-inter font-normal">Photographer<br>DM for Collaboration</p>
+    </div>
 
-        <!-- <div class="md:flex md:flex-wrap md:items-center mb-4">
-          <h2 class="text-3xl inline-block font-light md:mr-2 mb-2 sm:mb-0">
-            bytewebster
-          </h2>
-
-   
-          <span class="inline-block fas fa-certificate fa-lg text-blue-500 relative mr-6  text-xl transform -translate-y-2" aria-hidden="true">
-            <i class="fas fa-check text-white text-xs absolute inset-x-0 ml-1 mt-px"></i>
-          </span>
-
-
-          <a href="#" class="bg-blue-500 px-2 py-1 text-white font-semibold text-sm rounded block text-center sm:inline-block">Follow</a>
-        </div> -->
-
-        <!-- user meta form medium screens -->
-      </div>
-
-      <!-- <div class="md:hidden text-sm my-2">
-        <h1 class="font-semibold">ByteWebster</h1>
-          <span class="bioclass">Internet company</span>
-          <p>ByteWebster is a web development and coding blog website. Where we provide professional web projects🌍</p>
-          <span><strong>www.bytewebster.com</strong></span>
-      </div> -->
-
+    <div class="md:flex md:flex-wrap md:items-center pt-3">
+        <a href="#" class="bg-blue-500 px-2 py-1 text-white font-semibold text-sm rounded block text-center sm:inline-block">Follow</a>
     </div>
 
     <!-- posts -->
     <div class="px-px md:px-3">
 
-
-      <br>
-      <br>
-
-      <ProfileTabNav />
+    <ProfileTabNav />
 
       <!-- flexbox grid -->
       <div class="flex flex-wrap -mx-px md:-mx-3">
