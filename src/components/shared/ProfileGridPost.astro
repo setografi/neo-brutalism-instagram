@@ -1,51 +1,3 @@
----
-import ProfileTabNav from "../navbars/ProfileTabNav.astro"
-import ProfileTop from "../navbars/ProfileTop.astro"
----
-
-<section class="relative pt-[85px]">
-    <div class="px-5 mb-8">
-        <ProfileTop />
-
-        <div class="flex flex-wrap items-center space-x-4 pt-6">
-            <div class="w-3/12">
-                <img class="w-20 h-20 md:w-40 md:h-40 object-cover rounded-full border-2 border-pink-600 p-1" src="/images/stories-profile-(1).png" alt="profile">
-            </div>
-
-            <div class="w-8/12">
-                <ul class="flex justify-around text-center p-2 gap-6">
-                    <li class="font-sfPro font-normal text-textBlack text-sm">
-                        <span class="font-sfPro font-bold">1,234</span>
-                        Posts
-                    </li>
-
-                    <li class="font-sfPro font-normal text-textBlack text-sm">
-                        <span class="font-sfPro font-bold">5,678</span>
-                        Followers
-                    </li>
-
-                    <li class="font-sfPro font-normal text-textBlack text-sm">
-                        <span class="font-sfPro font-bold">9,101</span>
-                        Following
-                    </li>
-                </ul>
-            </div>
-    </div>
-
-    <div class="text-xs pt-3">
-        <h1 class="font-inter font-bold">Marina Jose</h1>
-        <span class="font-inter font-normal text-textGray text-[10px]">Blogger</span>
-        <p class="font-inter font-normal">Photographer<br>DM for Collaboration</p>
-    </div>
-
-    <div class="md:flex md:flex-wrap md:items-center pt-3">
-        <a href="#" class="bg-blue-500 px-2 py-1 text-white font-semibold text-sm rounded block text-center sm:inline-block">Follow</a>
-    </div>
-
-    <!-- posts -->
-    <div class="px-px md:px-3">
-    <ProfileTabNav />
-
       <!-- flexbox grid -->
       <div class="flex flex-wrap -mx-px md:-mx-3">
 
@@ -124,6 +76,3 @@ import ProfileTop from "../navbars/ProfileTop.astro"
           </a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
