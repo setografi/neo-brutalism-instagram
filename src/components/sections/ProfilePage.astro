@@ -1,6 +1,7 @@
 ---
 import ProfileTabNav from "../navbars/ProfileTabNav.astro"
 import ProfileTop from "../navbars/ProfileTop.astro"
+import Button from "../shared/Button.astro"
 ---
 
 <section class="relative pt-[85px]">
@@ -38,11 +39,20 @@ import ProfileTop from "../navbars/ProfileTop.astro"
         <p class="font-inter font-normal">Photographer<br>DM for Collaboration</p>
     </div>
 
-    <div class="md:flex md:flex-wrap md:items-center pt-3">
-        <a href="#" class="bg-blue-500 px-2 py-1 text-white font-semibold text-sm rounded block text-center sm:inline-block">Edit Profile</a>
-    </div>
+    <div class="flex justify-between items-center pt-3">
+        <Button />
 
-    <div class="px-px md:px-3">
+        <div class="relative top-0">
+            <button class="relative bg-lightSeaGreen px-2 py-1 text-textBlack font-inter font-semibold text-xs rounded-[2.75px] border-2 border-textBlack text-center z-10">
+                <i class="ri-user-add-line"></i>
+            </button>
+
+            <div class="absolute inset-0 top-0 left-0 rounded-[2.75px] border-2 border-textBlack bg-textBlack translate-y-[2px] -translate-x-[2px]"></div>
+        </div>
+    </div>
+  
+
+    <div class="pt-4">
         <ProfileTabNav />
     </div>
   </div>

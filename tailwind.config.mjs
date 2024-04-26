@@ -9,6 +9,7 @@ export default {
         grayBgpost: "#DFDFE8",
         dimGray: "#6E6E6E",
         textGray: "#727272",
+        lightSeaGreen: "#73BDA8",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
