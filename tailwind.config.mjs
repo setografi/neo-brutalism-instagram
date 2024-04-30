@@ -10,6 +10,7 @@ export default {
         dimGray: "#6E6E6E",
         textGray: "#727272",
         lightSeaGreen: "#73BDA8",
+        burntOrange: "#CC6B49",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
