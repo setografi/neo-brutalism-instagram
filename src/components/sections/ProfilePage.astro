@@ -3,9 +3,27 @@ import ProfileTabNav from "../navbars/ProfileTabNav.astro"
 import ProfileTop from "../navbars/ProfileTop.astro"
 import Button from "../shared/Button.astro"
 import ProfileGridPost from "../shared/ProfileGridPost.astro"
+
+const profilePostImage = [
+    {
+        postone:"/src/assets/images/Post-Image-1.png",
+        posttwo:"/src/assets/images/Post-Image-2.png",
+        postthree:"/src/assets/images/Post-Image-3.png",
+    },
+    {
+        postone:"/src/assets/images/Post-Image-4.png",
+        posttwo:"/src/assets/images/Post-Image-5.png",
+        postthree:"/src/assets/images/Post-Image-6.png",
+    },
+    {
+        postone:"/src/assets/images/Post-Image-7.png",
+        posttwo:"/src/assets/images/Post-Image-8.png",
+        postthree:"/src/assets/images/Post-Image-9.png",
+    },
+]
 ---
 
-<section class="relative pt-[85px]">
+<section class="relative pt-[85px] mb-24">
     <div class="px-5 mb-8">
         <ProfileTop />
 
@@ -60,7 +78,13 @@ import ProfileGridPost from "../shared/ProfileGridPost.astro"
     <div class="pt-4">
         <ProfileTabNav />
         
-        <ProfileGridPost />
+        <div>
+            {profilePostImage.map(item=>{
+                return <ProfileGridPost {...item}/>
+            })
+            }
+        </div>
+        <!-- <ProfileGridPost /> -->
     </div>
   </div>
 </section>

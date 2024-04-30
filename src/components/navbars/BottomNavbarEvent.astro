@@ -34,9 +34,11 @@ const ProfileImages = [
             <i class="ri-heart-3-line"></i>
         </button>
 
-        {ProfileImages.map(item=>{
-            return <ProfileButton {...item}/>
-            })
-        }
+        <a href="/components/sections/ProfilePage">        
+            {ProfileImages.map(item=>{
+                return <ProfileButton {...item}/>
+                })
+            }
+        </a>
         </div>
   </footer>
