@@ -10,8 +10,10 @@ import ProfileGridPost from "../shared/ProfileGridPost.astro"
         <ProfileTop />
 
         <div class="flex flex-wrap items-center space-x-4 pt-6">
-            <div class="w-3/12">
-                <img class="w-20 h-20 md:w-40 md:h-40 object-cover rounded-full border-2 border-pink-600 p-1" src="/images/stories-profile-(1).png" alt="profile">
+            <div class="relative w-3/12">
+                <img class="relative w-20 h-20 object-cover rounded-full border-2 border-textBlack z-10" src="/images/stories-profile-(1).png" alt="profile">
+
+                <div class="absolute w-20 h-20 inset-0 top-0 left-0 rounded-full border-2 border-textBlack bg-textBlack translate-y-[3px] -translate-x-[3px]"></div>
             </div>
 
             <div class="w-8/12">
@@ -40,8 +42,10 @@ import ProfileGridPost from "../shared/ProfileGridPost.astro"
         <p class="font-inter font-normal">Photographer<br>DM for Collaboration</p>
     </div>
 
-    <div class="flex justify-between items-center pt-3">
-        <Button />
+    <div class="flex w-full justify-between items-center pt-3 gap-2">
+        <div class="w-full">
+            <Button />
+        </div>
 
         <div class="relative top-0">
             <button class="relative bg-lightSeaGreen px-2 py-1 text-textBlack font-inter font-semibold text-xs rounded-[2.75px] border-2 border-textBlack text-center z-10">
